@@ -1,13 +1,11 @@
-import re
+def one_word(text):
+    """
+    Detects if the text consists of only one word.
 
-# Phrase in Arabic
-arabic_phrase = "ريدا"
+    Parameters:
+    text (str): The input text to check.
 
-# Regular expression to check for a single word in Arabic
-single_word_regex = r'^\b[\u0600-\u06FF]+\b$'
-
-# Check if the phrase contains a single word
-if re.match(single_word_regex, arabic_phrase):
-    print(f"The phrase '{arabic_phrase}' contains a single word in Arabic.")
-else:
-    print(f"The phrase '{arabic_phrase}' does not contain a single word in Arabic.")
+    Returns:
+    bool: True if there is only one word, False otherwise.
+    """
+    return len(text.split()) == 1
