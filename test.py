@@ -81,7 +81,7 @@ def generate_excel(alerts):
     print(f"Alerts have been saved to '{excel_file_name}'.")
 
 def main():
-    file_path = 'C:\\Users\\userfl\\Desktop\\tist\\Test (1).srt'
+    file_path = 'path\to\youre\data.srt'
     try:
         if not os.path.isfile(file_path):
             raise FileNotFoundError(f"The file '{file_path}' could not be found.")
